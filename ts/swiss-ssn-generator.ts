@@ -53,15 +53,25 @@ function checkNumberOld(ssn) {
 function generateNew() {
     // see
     var ssn = [7,5,6];
-    var sum = 7 + 5*3 + 6;
+
     for(var i=0;i<9;i++) {
         var r = getRandomIntInclusive(0,9);
-        sum += r * ((i+1) % 2 * 3);
         ssn.push(r);
     }
-    var check = 10 - sum % 10;
-    ssn.push(check);
+
+    ssn.push(checkNumberNew(ssn));
     return ssn.join('');
+}
+
+function checkNumberNew(ssn) {
+    var sum = 0;
+    for(var i=0;i<ssn.length;i++) {
+        sum += ssn[i] * ((i) % 2 == 0 ? 1 : 3);
+    }
+
+    var check = 10 - sum % 10;
+    return check;
+
 }
 
 function getRandomIntInclusive(min:number, max:number):number {
