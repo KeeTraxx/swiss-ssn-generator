@@ -1,6 +1,6 @@
 {
   "name": "swiss-ssn-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generates Swiss social security numbers",
   "main": "js/swiss-ssn-generator.js",
   "scripts": {
@@ -23,5 +23,5 @@
   "bugs": {
     "url": "https://github.com/KeeTraxx/swiss-ssn-generator/issues"
   },
-  "homepage": "https://github.com/KeeTraxx/swiss-ssn-generator#readme"
+  "homepage": "http://keetraxx.github.io/swiss-ssn-generator/"
 }
