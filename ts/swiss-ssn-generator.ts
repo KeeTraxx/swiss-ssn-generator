@@ -26,7 +26,7 @@ function generateOld() {
 
     while(ssn.length < 11) {
         var check = checkNumberOld(ssn);
-        if ( check > 0 ) {
+        if ( check != 10 ) {
             ssn.push(check);
         } else {
             ssn[8]++;
