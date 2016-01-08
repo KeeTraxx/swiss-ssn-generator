@@ -61,7 +61,7 @@
             sum += ssn[i] * ((i) % 2 == 0 ? 1 : 3);
         }
         var check = 10 - sum % 10;
-        return check;
+        return check == 10 ? 0 : check;
     }
     function getRandomIntInclusive(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min;

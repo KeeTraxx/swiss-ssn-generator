@@ -70,7 +70,7 @@ function checkNumberNew(ssn) {
     }
 
     var check = 10 - sum % 10;
-    return check;
+    return check == 10 ? 0 : check;
 
 }
 
